@@ -24,7 +24,6 @@ class App extends Component {
 
     onSearchChange = (event) => {
         this.setState({ searchField: event.target.value })
-        // console.log(event.target.value);
     }
 
     render() {
@@ -40,7 +39,7 @@ class App extends Component {
                     <h1 className='f1'>Welcome to Mars</h1>
                     <SearchBox searchChange={this.onSearchChange} />
                     <Scroll>
-                        '<CardList robots={filteredRobots} />
+                        <CardList robots={filteredRobots} />
                     </Scroll>
                 </div>
         );
